@@ -1,0 +1,28 @@
+{
+  "name": "ifs24041-pabwe2026-sk-p7-laravel-livewire",
+  "version": "1.0.0",
+  "description": "Paket source Laravel 13 + Livewire 4 dengan arsitektur Feature-First.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikoSimanjuntak/ifs24041-pabwe2026-sk-p7-laravel-livewire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NikoSimanjuntak/ifs24041-pabwe2026-sk-p7-laravel-livewire/issues"
+  },
+  "homepage": "https://github.com/NikoSimanjuntak/ifs24041-pabwe2026-sk-p7-laravel-livewire#readme",
+  "devDependencies": {
+    "laravel-vite-plugin": "^3.2.1",
+    "vite": "^8.3.7"
+  }
+}
