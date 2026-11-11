@@ -26,7 +26,7 @@ class Register extends Component
 
         auth()->login($user);
 
-        request()->session()->regenerate();
+        session()->regenerate();
 
         return redirect('/stocks');
     }
