@@ -1,7 +1,9 @@
+
 <?php
 
 use App\Features\Auth\Livewire\Login;
 use App\Features\Auth\Livewire\Register;
+use App\Features\Dashboard\Livewire\Dashboard;
 use App\Features\Profile\Livewire\Profile;
 use App\Features\Stock\Livewire\StockDetail;
 use App\Features\Stock\Livewire\StockList;
@@ -34,6 +36,8 @@ Route::post('/logout', function () {
 })->middleware('auth')->name('logout');
 
 Route::middleware(['auth', 'role:member'])->group(function () {
+    Route::get('/dashboard', Dashboard::class)->name('dashboard');
+
     Route::get('/stocks', StockList::class)->name('stocks.index');
 
     Route::get('/stocks/{stock}', StockDetail::class)
